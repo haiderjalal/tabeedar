@@ -1,0 +1,13 @@
+{
+  "name": "tabeedar-db-tests",
+  "private": true,
+  "type": "module",
+  "description": "Applies the Supabase migrations to an in-memory Postgres (PGlite + PostGIS) and tests the security rules, order functions and seed data. No Docker needed.",
+  "scripts": {
+    "test": "node tests.mjs && node seed-test.mjs"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "0.5.17",
+    "@electric-sql/pglite-postgis": "0.2.17"
+  }
+}

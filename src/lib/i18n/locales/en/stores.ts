@@ -1,0 +1,37 @@
+/** English strings for finding stores and looking inside one. */
+export const stores = {
+  home: {
+    deliveringTo: 'Delivering to',
+    change: 'Change',
+    searchPlaceholder: 'Search stores and products',
+    searchLabel: 'Search stores and products',
+    noAddressTitle: 'Where should we deliver?',
+    noAddressBody: 'Add a delivery address to see the stores near you.',
+    addAddress: 'Add an address',
+    emptyNearbyTitle: 'No stores near you yet',
+    emptyNearbyBody: 'There are no stores listed near this address. Try a different address.',
+    emptySearchTitle: 'Nothing found',
+    emptySearchBody: 'We found no stores or products matching “{{query}}”.',
+    loadError: 'We could not load the stores.',
+  },
+  card: {
+    open: 'Open',
+    closed: 'Closed',
+    away: '{{distance}} {{unit}} away',
+    has: 'Has: {{products}}',
+    openStore: 'Open {{name}}',
+  },
+  store: {
+    closedBanner: 'This store is closed right now. You can look around, but you cannot order.',
+    outOfStock: 'Out of stock',
+    add: 'Add',
+    addLabel: 'Add {{name}} to your cart',
+    otherItems: 'Other items',
+    noProducts: 'This store has not added any products yet.',
+    notFoundTitle: 'Store not found',
+    notFoundBody: 'It may have been removed or is not available right now.',
+    viewCart: 'View cart',
+    cartSummary: 'Items: {{count}}',
+    loadError: 'We could not load this store.',
+  },
+};
