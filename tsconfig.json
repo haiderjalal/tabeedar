@@ -1,0 +1,18 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    // The shared sender code imports its siblings with ".ts" because Deno requires the extension.
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+    "paths": {
+      "@/*": ["./src/*"],
+      "@/assets/*": ["./assets/*"]
+    }
+  },
+  "include": ["**/*.ts", "**/*.tsx", ".expo/types/**/*.ts", "expo-env.d.ts"],
+  // The Edge Function entry point is Deno code (Deno globals, remote imports) and is checked by
+  // Supabase when it is deployed. Its logic lives in supabase/functions/_shared, which is checked here.
+  "exclude": ["node_modules", "supabase/functions/send-push"]
+}
