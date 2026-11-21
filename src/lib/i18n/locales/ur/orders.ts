@@ -1,0 +1,56 @@
+import type { orders as englishOrders } from '../en/orders';
+
+/** Urdu strings for a customer's orders. First draft: a native speaker should review. */
+export const orders: typeof englishOrders = {
+  list: {
+    emptyTitle: 'ابھی کوئی آرڈر نہیں',
+    emptyBody: 'آپ کے آرڈر یہاں نظر آئیں گے۔',
+    browse: 'دکانیں دیکھیں',
+    placedAt: 'آرڈر کا وقت: {{date}}',
+    loadError: 'ہم آپ کے آرڈر لوڈ نہیں کر سکے۔',
+  },
+  status: {
+    placed: 'دکان کے جواب کا انتظار',
+    accepted: 'دکان نے قبول کر لیا',
+    preparing: 'تیار ہو رہا ہے',
+    ready: 'اٹھانے کے لیے تیار',
+    picked_up: 'راستے میں ہے',
+    delivered: 'پہنچا دیا گیا',
+    rejected: 'دکان نے مسترد کر دیا',
+    cancelled: 'منسوخ',
+  },
+  detail: {
+    orderNumber: 'آرڈر نمبر {{id}}',
+    from: '{{store}} سے',
+    placedAt: 'آرڈر کا وقت: {{date}}',
+    items: 'اشیا',
+    subtotal: 'ذیلی کل',
+    deliveryFee: 'ڈیلیوری فیس',
+    total: 'کل',
+    cashOnDelivery: 'آرڈر پہنچنے پر آپ نقد ادائیگی کریں گے۔',
+    delivery: 'ڈیلیوری',
+    recipient: '{{name}} کے لیے',
+    notes: 'آپ کا نوٹ',
+    rider: 'آپ کا رائیڈر',
+    riderUnknown: 'ایک رائیڈر',
+    progress: 'پیش رفت',
+    riderAssigned: 'ایک رائیڈر نے آپ کی ڈیلیوری قبول کر لی',
+    cancel: 'آرڈر منسوخ کریں',
+    cancelConfirm: {
+      title: 'یہ آرڈر منسوخ کریں؟',
+      body: 'آپ صرف دکان کے قبول کرنے سے پہلے منسوخ کر سکتے ہیں۔',
+      confirm: 'آرڈر منسوخ کریں',
+      keep: 'آرڈر رکھیں',
+    },
+    notFoundTitle: 'آرڈر نہیں ملا',
+    notFoundBody: 'یہ آرڈر موجود نہیں، یا کسی اور کا ہے۔',
+    loadError: 'ہم یہ آرڈر لوڈ نہیں کر سکے۔',
+    itemLine: '{{quantity}} × {{name}}',
+  },
+  errors: {
+    invalidTransition: 'دکان پہلے ہی جواب دے چکی ہے، اس لیے یہ آرڈر اب منسوخ نہیں ہو سکتا۔',
+    orderNotFound: 'ہمیں یہ آرڈر نہیں ملا۔',
+    network: 'انٹرنیٹ کنکشن نہیں ہے۔ اپنا کنکشن چیک کریں اور دوبارہ کوشش کریں۔',
+    generic: 'کچھ غلط ہو گیا۔ براہِ کرم دوبارہ کوشش کریں۔',
+  },
+};

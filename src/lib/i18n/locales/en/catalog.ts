@@ -1,0 +1,70 @@
+/** English strings for the store owner's products and categories. */
+export const catalog = {
+  list: {
+    loadError: 'We could not load your products.',
+    emptyTitle: 'No products yet',
+    emptyBody: 'Add your first product so customers can order it.',
+    addProduct: 'Add product',
+    manageCategories: 'Categories',
+    uncategorised: 'No category',
+    inStock: 'In stock',
+    outOfStock: 'Out of stock',
+    stockSwitch: 'In stock: {{name}}',
+    editProduct: 'Edit {{name}}',
+    stockFailed: 'We could not change the stock. Please try again.',
+  },
+  product: {
+    form: {
+      photo: 'Product photo',
+      name: { label: 'Product name' },
+      description: {
+        label: 'Description (optional)',
+        hint: 'Size, brand, anything customers should know',
+      },
+      price: { label: 'Price (Rs)', hint: 'In rupees, for example 250 or 99.50' },
+      category: { label: 'Category', none: 'No category' },
+      inStock: 'In stock',
+      inStockHint:
+        'Turn this off when you run out. Customers can still see the product but cannot order it.',
+      save: 'Save product',
+      delete: 'Delete product',
+    },
+    deleteConfirm: {
+      title: 'Delete this product?',
+      body: '“{{name}}” will be removed from your store. Past orders are not affected.',
+      confirm: 'Delete product',
+      keep: 'Keep product',
+    },
+    notFoundTitle: 'Product not found',
+    notFoundBody: 'This product no longer exists.',
+  },
+  categories: {
+    loadError: 'We could not load your categories.',
+    emptyTitle: 'No categories yet',
+    emptyBody: 'Categories group your products on your store page, for example Dairy or Snacks.',
+    newLabel: 'New category',
+    nameLabel: 'Category name',
+    add: 'Add',
+    save: 'Save',
+    edit: 'Rename',
+    editLabel: 'Rename {{name}}',
+    deleteLabel: 'Delete {{name}}',
+    deleteConfirm: {
+      title: 'Delete this category?',
+      body: '“{{name}}” will be removed. Its products stay in your store, without a category.',
+      confirm: 'Delete category',
+      keep: 'Keep category',
+    },
+  },
+  validation: {
+    categoryNameRequired: 'Please enter a category name.',
+    productNameRequired: 'Please enter the product name.',
+    priceInvalid: 'Please enter a price in rupees, for example 250 or 99.50.',
+    tooLong: 'This is too long (at most {{max}} characters).',
+  },
+  errors: {
+    duplicateName: 'You already have a category with this name.',
+    network: 'No connection. Check your internet and try again.',
+    generic: 'Something went wrong. Please try again.',
+  },
+};
